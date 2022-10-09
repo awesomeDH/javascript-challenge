@@ -1,0 +1,43 @@
+/* reset */
+h1,h2,h3,h4,h5,h6,p,span {color:#fff; line-height: 1.2; margin: 0;}
+input::placeholder {color:#fff;}
+
+/* hidden */
+.hidden {display:none;}
+
+/* layout */
+body {width: 100%; height: 100vh; margin: 0 auto; overflow: hidden;}
+body img {width: 100%; height: 100%; object-fit: cover; object-position: center;}
+.wrapper {width: 100%; position: absolute; z-index: 9; top: 50%; transform: translateY(-50%); left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;}
+
+/* clock */
+.wrapper h2#clock {font-size: 80px; margin: 0; color:#fff; font-weight: 500; text-shadow: 5px 10px 20px rgba(255,255,255,0.3);}
+
+/* login */
+#loginForm input {height: 40px; box-sizing: border-box; border: 0; border-radius: 5px; box-shadow: 3px 10px 20px rgba(255,255,255,0.2);}
+#loginForm input[type="text"] {width: 180px; padding: 0 10px; background-color:rgba(0,0,0,0.3); margin-right: 5px; color:#fff;}
+#loginForm input[type="submit"] {background-color:rgba(255,255,255,0.8); padding: 0 20px;}
+
+/* greeting */
+h1#greeting::after {content:' 👋';}
+
+/* todolist */
+h3 {margin-top: 20px;}
+#todoForm input {background:transparent; border-bottom: 1px solid #fff; border-top: 0; border-left: 0; border-right: 0; color:#fff; width: 250px; text-align: center; font-size: 16px; height: 30px;}
+ul#todoList {width: 35%; max-height: 150px; overflow-y:scroll; display:flex; flex-direction: column; gap: 5px; background-color:rgba(0,0,0,0.2); border-radius: 5px; margin: 0; padding: 0;}
+ul#todoList li {list-style: none; white-space: wrap; word-wrap: break-word; display: flex; justify-content: space-between; position: relative; padding: 0 10px 0 40px;}
+ul#todoList li:first-of-type {margin-top: 10px;}
+ul#todoList li:last-of-type {margin-bottom: 10px;}
+ul#todoList li::before {content:'🔥 ';position:absolute; left: 15px;}
+ul#todoList li button {background-color:transparent; border: none;}
+
+/* quote */
+#quote {display: flex; flex-direction: column; gap: 5px; width: 70%; margin-top: 20px;}
+#quote span:first-of-type {font-style: italic; font-size: 22px;}
+#quote span:first-of-type::before {content:'"';}
+#quote span:first-of-type::after {content:'"';}
+#quote span:last-of-type {text-align: right;}
+#quote span:last-of-type::before {content:'  - ';}
+
+/* weather */
+#weather {margin-top: 20px;}
